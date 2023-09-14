@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  
+}
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: #007bff;
+}
+#guess-input {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px;
+  font-size: 18px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Agregamos bordes redondeados */
+  transition: border-color 0.3s; /* Transición para el cambio de color de borde */
+}
+#guess-input:hover {
+  border-color: red; /* Cambio de color de borde al pasar el mouse */
+}
+#guess-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background: linear-gradient(to bottom, #007bff, #0056b3);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 255, 0.3);
+  transition: background-color 0.3s, transform 0.2s;
+}
+#guesses {
+  text-align: center; /* Esto centrará horizontalmente el texto de los intentos */
+  margin-top: 20px; /* Puedes ajustar este margen según tus preferencias */
+}
+.letter {
+  border: 1px solid black;
+  padding: 3px;
+  margin: 3px;
+  min-width: 20px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 255, 0.3);
+}
+#guess-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}   
+#guess-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: blue;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+button:active {
+    transform: scale(0.95);
+}
+.letter {
+    border: 1px solid black;
+    padding: 3px;
+    margin: 3px;
+    min-width: 20px;
+    text-align: center;
+    display: inline-block
+}
+.row{
+    margin-bottom: 10px;
+} 
+.input-area{
+      margin: 30px;
+  }
+#guesses {
+    text-align: center;
+    margin-top: 20px; 
+}
+#guesses h1 {
+    margin: 0; 
+}
+#ayuda {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 7px 14px; /* Ajusta el relleno para hacerlo más pequeño */
+  font-size: 16px; /* Reduzco el tamaño de fuente */
+  background: linear-gradient(to bottom, #007bff, #0056b3);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 255, 0.3);
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+#ayuda:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 255, 0.5);
+}
